@@ -1,7 +1,7 @@
 //
 //    FILE: AsyncAnalog.cpp
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.1
+// VERSION: 0.1.2
 //    DATE: 2018-09-05
 // PURPOSE: async version of analogRead, prevent blocking wait
 //
@@ -11,6 +11,7 @@
 // HISTORY:
 // 0.1.0   2018-09-05 initial version, based upon analogRead()
 // 0.1.1   2020-03-26 minor refactor
+// 0.1.2   2020-05-27 update library.json
 //
 
 #include "AsyncAnalog.h"

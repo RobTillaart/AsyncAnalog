@@ -2,14 +2,14 @@
 //
 //    FILE: AsyncAnalog.h
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.1
+// VERSION: 0.1.2
 //    DATE: 2018-09-05
 // PURPOSE: async version of analogRead
 //     URL: https://github.com/RobTillaart/AsyncAnalog
 //
 
 #if !defined(ARDUINO_ARCH_AVR)
-  #error “AsyncAnalog library 0.1.1 only supports boards with an AVR processor .”
+  #error “AsyncAnalog library 0.1.2 only supports boards with an AVR processor .”
 #endif
 // (ARDUINO_ARCH_SAM) future
 
@@ -18,7 +18,7 @@
 #include "wiring_private.h"
 #include "pins_arduino.h"
 
-#define ASYNCANALOG_LIB_VERSION "0.1.1"
+#define ASYNCANALOG_LIB_VERSION "0.1.2"
 
 class AsyncAnalog
 {
