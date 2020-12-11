@@ -22,7 +22,7 @@
 #include <ArduinoUnitTests.h>
 
 #include "Arduino.h"
-#include "AsyncAnalog.h"
+// #include "AsyncAnalog.h"
 
 unittest_setup()
 {
@@ -34,7 +34,7 @@ unittest_teardown()
 
 unittest(test_none)
 {
-  fprinf(stderr, "no unit test");
+  fprintf(stderr, "no unit test defined as library is HW specific");
 }
 
 unittest_main()
