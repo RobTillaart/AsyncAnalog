@@ -24,7 +24,6 @@
 #include "Arduino.h"
 #include "AsyncAnalog.h"
 
-
 unittest_setup()
 {
 }

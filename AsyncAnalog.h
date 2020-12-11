@@ -12,7 +12,7 @@
 
   #error “AsyncAnalog library 0.1.3 only supports boards with an AVR processor .”
   
-#endif
+#else
 
 // (ARDUINO_ARCH_SAM) future
 
@@ -35,5 +35,7 @@ public:
 private:
   uint8_t _pin;
 };
+
+#endif
 
 // -- END OF FILE --
