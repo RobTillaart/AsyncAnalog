@@ -1,7 +1,7 @@
 //
 //    FILE: AsyncAnalog.cpp
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.2
+// VERSION: 0.1.3
 //    DATE: 2018-09-05
 // PURPOSE: async version of analogRead, prevent blocking wait
 //
@@ -9,19 +9,19 @@
 // https://www.avrfreaks.net/forum/tut-c-newbies-guide-avr-adc?name=PNphpBB2&file=viewtopic&t=56429
 //
 // HISTORY:
-// 0.1.0   2018-09-05 initial version, based upon analogRead()
-// 0.1.1   2020-03-26 minor refactor
-// 0.1.2   2020-05-27 update library.json
-//
+// 0.1.0   2018-09-05  initial version, based upon analogRead()
+// 0.1.1   2020-03-26  minor refactor
+// 0.1.2   2020-05-27  update library.json
+// 0.1.3   2020-12-12  added Arduino CI, minor fixes
+
 
 #include "AsyncAnalog.h"
-
 
 #if defined(ARDUINO_ARCH_AVR)
 
 AsyncAnalog::AsyncAnalog(const uint8_t pin)
 {
-    _pin = pin;
+  _pin = pin;
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
   if (_pin >= 54) _pin -= 54;
 #else
@@ -67,6 +67,6 @@ int AsyncAnalog::value()
   return (high << 8) | low;
 }
 
-#endif		// ARDUINO_ARCH_AVR
+#endif        // ARDUINO_ARCH_AVR
 
 // -- END OF FILE --
